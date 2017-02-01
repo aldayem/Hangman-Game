@@ -3,26 +3,24 @@
   <head>
   <tittle>HANG MAN </tittle>
 
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<script type="text/javascript" src="assets/javascript/game.js"></script>
- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+             <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+            <script type="text/javascript" src="assets/javascript/game.js"></script>
+            <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   </head>
   <body> 
-  <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-  <tittle>HANG MAN </tittle>
-  </head>
-  <body>
-
-  <p id="ratefeld"></p>
+  
+  <p id="contaner"></p>
 <form name="rateformular">
-<input name="ratezeichen" type="text" size="5" maxlength="1">
-<input name="ratebutton" type="button" value="Guess" onClick="pruefeZeichen()">
+<input name="ratezeichen" type="text" size="8" maxlength="1">
+<input name="ratebutton" type="button" class="btn btn-warning" value="Guess" onClick="pruefeZeichen()">
 
 <p id="gerateneBuchstaben">Wrong Letters:</p>
-<img src="http://www.writteninpencil.de/Projekte/Hangman/hangman0.png" id="hangman"><br />
-<input name="refresh" type="button" value="New Game" onClick="location.reload()">
+<img src="http://www.writteninpencil.de/Projekte/Hangman/hangman0.png" id="hangman" style="width: 200px;"><br />
+
+    <input name="refresh" type="button" class= " btn btn-success" value="New Game" onClick="location.reload()">
 </form>
  
 
